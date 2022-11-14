@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the Test project for rapptr labs
+![image](https://user-images.githubusercontent.com/66811996/201751153-74c12a37-b3b4-432f-bf7d-d3f8d5ed48ac.png)
 
 ## Available Scripts
 
