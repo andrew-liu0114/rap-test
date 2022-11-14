@@ -2,7 +2,6 @@
 
 This project is the Test project for rapptr labs
 ![image](https://user-images.githubusercontent.com/66811996/201771201-ae8c646b-a565-4508-8d6c-7da541265a28.png)
-![image](https://user-images.githubusercontent.com/66811996/201771239-2faf495d-c72d-45b3-8f7c-90c8c1d34651.png)
 
 ## Available Scripts
 
