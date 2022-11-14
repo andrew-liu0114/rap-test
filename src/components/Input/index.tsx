@@ -15,13 +15,10 @@ const Input = ({
 }: IInput) => {
   return (
     <div className="form-control">
-      <label className="form-control__label">
-        {capitalizeFirstLetter(name)}
-      </label>
       <input
         type={type}
         className={classnames(
-          `form-control__input--${name}`,
+          `form-control__input form-control__input--${name}`,
           error && `form-control__input--${name}__error`
         )}
         placeholder={placeholder}
@@ -43,6 +40,9 @@ const Input = ({
           pattern: { value: pattern, message: "Not a valid email" },
         })}
       />
+      <label className="form-control__label">
+        {capitalizeFirstLetter(name)}
+      </label>
     </div>
   );
 };

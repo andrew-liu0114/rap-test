@@ -42,13 +42,11 @@ const Home: React.FC = () => {
   };
 
   const handleAddItem = (todo: string) => {
-    if (todo) {
-      setIsCreatable(false);
-      setTodos((state) => [
-        { id: uuid(), content: todo, editable: false },
-        ...state,
-      ]);
-    }
+    setIsCreatable(false);
+    setTodos((state) => [
+      { id: uuid(), content: todo, editable: false },
+      ...state,
+    ]);
   };
 
   const handleTodoDelete = (id: string) => {
@@ -98,7 +96,7 @@ const Home: React.FC = () => {
   return (
     <div className="home--container">
       <div className="home--container__logout">
-        <button onClick={hanldeLogout}>Logout</button>
+        <button onClick={hanldeLogout}></button>
       </div>
       <div className="home--container__main">
         <h1 className="home--container__main__title">

@@ -1,3 +1,4 @@
+@import "../../styles/mixin";
 .home--container {
   width: 95%;
 
@@ -14,13 +15,32 @@
       cursor: pointer;
       text-transform: uppercase;
       transition: all 0.2s ease-in;
+      &::before {
+        content: "Logout";
+      }
+      @include for_breakpoint(mobile tablet) {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 0;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: url(https://api.iconify.design/ri/logout-circle-r-line.svg?color=white&width=30&height=30)
+            no-repeat;
+          background-position: center;
+        }
+      }
     }
   }
 
   &__main {
     max-width: 30rem;
-    margin: auto;
-    margin-top: 1rem;
+    margin: 1rem auto 1rem;
 
     &__title {
       margin: 0 0 1.5rem;
@@ -125,7 +145,7 @@
       }
 
       &__content {
-        height: 450px;
+        height: 40rem;
         overflow-y: auto;
         position: relative;
       }

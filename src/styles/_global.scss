@@ -12,8 +12,16 @@ p {
   margin: 0;
 }
 
+label {
+  font-size: 1.2rem;
+
+  @include for_breakpoint(mobile desktop) {
+    font-size: 1rem;
+  }
+}
+
 input:not([type*="submit"]) {
-  height: 36px;
+  height: 40px;
 }
 
 button,
