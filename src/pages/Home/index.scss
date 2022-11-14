@@ -1,0 +1,134 @@
+.home--container {
+  width: 95%;
+
+  &__logout {
+    text-align: right;
+
+    button {
+      align-self: center;
+      padding: 7px 30px;
+      border: none;
+      color: #fff;
+      background-color: teal;
+      box-shadow: 0px 2px 8px #014141;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  &__main {
+    max-width: 30rem;
+    margin: auto;
+    margin-top: 1rem;
+
+    &__title {
+      margin: 0 0 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .user--avatar {
+        border-radius: 50%;
+        height: 2.5rem;
+        margin-right: 10px;
+      }
+    }
+
+    &__todos {
+      padding: 1rem 0.5rem;
+      border-radius: 10px;
+      background: #ffffff80;
+      box-shadow: 0px 1px 8px #dedede;
+
+      &__header {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+        margin-bottom: 4px;
+
+        .search--form {
+          height: 40px;
+          display: inline-block;
+          border-radius: 20px;
+          background: #fff;
+          margin: 0 10px;
+          line-height: 40px;
+          font-size: 18px;
+          box-shadow: 0px 0px 3px #111;
+          overflow: hidden;
+          position: relative;
+          width: auto;
+
+          span {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+
+            &.slens {
+              position: absolute;
+              z-index: 1;
+
+              img {
+                color: #aaa;
+              }
+            }
+
+            &.sclose {
+              color: red;
+            }
+          }
+
+          input[id="search"] {
+            width: 0px;
+            margin: 0px 0px;
+            padding: 0px 0px 0px 40px;
+            border: none;
+            height: 40px;
+            vertical-align: top;
+            font-size: 20px;
+            position: relative;
+            z-index: 2;
+            background: transparent;
+            transition: width 1s;
+
+            &:focus {
+              outline: none;
+              width: 250px;
+
+              & + .sclose {
+                width: 40px;
+                cursor: pointer;
+              }
+            }
+
+            & + .sclose {
+              width: 0px;
+            }
+          }
+        }
+
+        .new {
+          align-self: center;
+          padding: 7px 30px;
+          border: none;
+          color: #fff;
+          background-color: teal;
+          box-shadow: 0px 2px 8px #014141;
+
+          cursor: pointer;
+          text-transform: uppercase;
+          transition: all 0.2s ease-in;
+        }
+      }
+
+      &__content {
+        height: 450px;
+        overflow-y: auto;
+        position: relative;
+      }
+    }
+  }
+}

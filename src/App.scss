@@ -1,0 +1,12 @@
+@import "./styles/mixin";
+@import "./styles/global";
+
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  background: url("../src/assets/image/bg.png");
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

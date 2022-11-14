@@ -1,0 +1,26 @@
+@import "./mixin";
+
+h1 {
+  font-size: 2.5rem;
+
+  @include for_breakpoint(mobile desktop) {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+input:not([type*="submit"]) {
+  height: 36px;
+}
+
+button,
+p {
+  font-size: 1rem;
+
+  @include for_breakpoint(mobile desktop) {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,71 @@
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+
+  &__label {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0.5rem 0;
+  }
+
+  &__input--email {
+    outline: 0;
+    position: relative;
+    appearance: none;
+    transition: all 0.2s;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid;
+    border-color: #dedede;
+
+    &:focus {
+      z-index: 1;
+      border-color: #3182ce;
+      box-shadow: 0 0 0 0.5px #3182ce;
+    }
+
+    &::before {
+      content: "dsfsdfsdf";
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+
+    &__error {
+      z-index: 1;
+      box-shadow: 0 0 0 0.5px red;
+      border-color: red;
+    }
+  }
+
+  &__input--password {
+    outline: 0;
+    position: relative;
+    appearance: none;
+    transition: all 0.2s;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid;
+    border-color: #dedede;
+
+    &:focus {
+      z-index: 1;
+      border-color: #3182ce;
+      box-shadow: 0 0 0 0.5px #3182ce;
+    }
+
+    :before {
+    }
+
+    &__error {
+      z-index: 1;
+      box-shadow: 0 0 0 0.5px red;
+      border-color: red;
+    }
+  }
+}

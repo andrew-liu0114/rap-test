@@ -1,0 +1,43 @@
+@import "../../styles/mixin";
+
+.todo--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  &__title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 70%;
+  }
+
+  &__btn--wrapper {
+    display: flex;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    margin-left: 15px;
+
+    @include for_breakpoint(mobile desktop) {
+      margin-left: 4px;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+
+      @include for_breakpoint(mobile desktop) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
